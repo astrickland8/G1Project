@@ -2,6 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <data-source source="LOCAL" name="sakila@localhost" uuid="af7360b9-4be5-44f3-be0a-5eead47b2469">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
@@ -18,12 +19,31 @@
     </data-source>
     <data-source source="LOCAL" name="@localhost" uuid="ed057977-c7d0-4d90-9279-25648039f92c">
 =======
+=======
+<<<<<<< Updated upstream
+>>>>>>> 9cb9820595b76a4347ce586817ccc9f6fa1929a0
     <data-source source="LOCAL" name="@localhost" uuid="d40ff40f-f823-44f8-b0c4-f28f7f115493">
 >>>>>>> 7e7d002fdfb70bc963a03db7e24f2895d57deade
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="mcmillanhris@localhost" uuid="c5714b34-5a46-4aaa-9f88-9932ba21eff3">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>mcmillanhris</remarks>
+      <schema-control>FORBID</schema-control>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/mcmillanhris</jdbc-url>
+=======
+    <data-source source="LOCAL" name="sakila@localhost" uuid="207bd241-c2fd-4c60-8587-88ecf01ab1d5">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/sakila</jdbc-url>
+>>>>>>> Stashed changes
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
