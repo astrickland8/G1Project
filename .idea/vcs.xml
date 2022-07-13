@@ -3,8 +3,15 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <mapping directory="$PROJECT_DIR$/DB" vcs="Git" />
 >>>>>>> 7e7d002fdfb70bc963a03db7e24f2895d57deade
+=======
+<<<<<<< Updated upstream
+    <mapping directory="$PROJECT_DIR$/DB" vcs="Git" />
+=======
+>>>>>>> Stashed changes
+>>>>>>> 9cb9820595b76a4347ce586817ccc9f6fa1929a0
   </component>
 </project>
