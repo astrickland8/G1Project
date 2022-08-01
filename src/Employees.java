@@ -44,6 +44,11 @@ public class Employees {
         catch (SQLException e) {
             throw new RuntimeException (e);
         }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
+        }
         return "\n-----------------------\n";
     }
 
@@ -118,6 +123,11 @@ public class Employees {
         }
         if (rowsUpdated > 0) {
             System.out.println ("An existing user was updated successfully!");
+        }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
         }
         return "\n-----------------------\n";
 
@@ -200,7 +210,11 @@ public class Employees {
         if (rowsUpdated > 0) {
             System.out.println ("A new user was added successfully!");
         }
-
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
+        }
         return "\n-----------------------\n";
     }
 
@@ -239,6 +253,11 @@ public class Employees {
         }
         if (rowsUpdated > 0) {
             System.out.println ("An employee record was deleted successfully!");
+        }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
         }
         return "\n-----------------------\n";
 

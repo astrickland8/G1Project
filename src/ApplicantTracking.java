@@ -45,6 +45,11 @@ public class ApplicantTracking {
         catch (SQLException e) {
             throw new RuntimeException (e);
         }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
+        }
         return "\n-----------------------\n";
     }
 
@@ -103,6 +108,11 @@ public class ApplicantTracking {
         }
         if (rowsUpdated > 0) {
             System.out.println ("An existing user was updated successfully!");
+        }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
         }
         return "\n-----------------------\n";
 
@@ -165,6 +175,11 @@ public class ApplicantTracking {
         if (rowsUpdated > 0) {
             System.out.println ("A new application was added successfully!");
         }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
+        }
         return "\n-----------------------\n";
 
     }
@@ -205,6 +220,11 @@ public class ApplicantTracking {
         }
         if (rowsUpdated > 0) {
             System.out.println ("An application was deleted successfully!");
+        }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
         }
         return "\n-----------------------\n";
 

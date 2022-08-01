@@ -44,6 +44,11 @@ public class Manager {
         catch (SQLException e) {
             throw new RuntimeException (e);
         }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
+        }
         return "\n-----------------------\n";
     }
 
@@ -119,6 +124,11 @@ public class Manager {
         if (rowsUpdated > 0) {
             System.out.println ("An existing user was updated successfully!");
         }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
+        }
         return "\n-----------------------\n";
 
     }
@@ -192,6 +202,11 @@ public class Manager {
         if (rowsUpdated > 0) {
             System.out.println ("A new user was added successfully!");
         }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
+        }
         return "\n-----------------------\n";
 
     }
@@ -232,6 +247,11 @@ public class Manager {
         }
         if (rowsUpdated > 0) {
             System.out.println ("A manager record was deleted successfully!");
+        }
+        try {
+            conn.close ();
+        } catch (SQLException e) {
+            throw new RuntimeException (e);
         }
         return "\n-----------------------\n";
 
