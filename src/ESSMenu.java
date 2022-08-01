@@ -16,8 +16,8 @@ public class ESSMenu {
         System.out.println ("--------------------------------");
         String input = scan.next ();
         if (input.equalsIgnoreCase ("inf")) {
-            switch (Employees.getEmployeeData ()) {
-            }}
+            Employees.getEmployeeData ();
+            }
         if (input.equalsIgnoreCase ("pay")) {
                 //insert pay getter function here
             }
