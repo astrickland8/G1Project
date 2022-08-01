@@ -36,6 +36,7 @@ public class ESSMenu {
                             System.out.println ("Input Invalid. Please enter a valid selection from the menu.");
                             while (input == "invalid") {
                                 essmenu ();
+                                break;
                             }
                         }
                     }
