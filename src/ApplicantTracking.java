@@ -70,20 +70,20 @@ public class ApplicantTracking {
         }
         System.out.println ("To update an application, please enter the application ID:");
         int applicant_id = scan.nextInt ();
-
+        System.out.println ("\n");
         System.out.println ("Enter new job id:");
         String jobid = scan.next ();
-
+        System.out.println ("\n");
         System.out.println ("Enter new job title:");
         String jobtitle = scan.next ();
-
+        System.out.println ("\n");
         System.out.println ("Have they been interviewed? 1 for true, 0 for false:");
         String interview = String.valueOf (scan.nextBoolean ());
-
+        System.out.println ("\n");
         System.out.println ("Have they been hired? 1 for true, 0 for false:");
         String hired = String.valueOf (scan.nextBoolean ());
-
-        System.out.println ("Enter hire date:");
+        System.out.println ("\n");
+        System.out.println ("Enter hire date in YYYY-MM-DD format:");
         String hiredate = scan.next ();
 
         String sql = "UPDATE applicant_tracking SET job_id=?, job_title=?, interviewed=?, hired=?, hire_date=? WHERE applicant_id = " + applicant_id + ";";
@@ -132,23 +132,23 @@ public class ApplicantTracking {
                 System.out.println ("-----------------------\nConnection Established.\n-----------------------\n");
             }} catch (SQLException e) {
             throw new RuntimeException (e);
-        }
+        }System.out.println ("\n");
         System.out.println ("Does the new applicant already have an an employee ID? If yes, enter it below, if no, enter 0:");
         int employee_id = scan.nextInt ();
-
+        System.out.println ("\n");
         System.out.println ("Enter new job id:");
         String jobid = scan.next ();
-
+        System.out.println ("\n");
         System.out.println ("Enter new job title:");
         String jobtitle = scan.next ();
-
+        System.out.println ("\n");
         System.out.println ("Have they been interviewed? 1 for true, 0 for false:");
         String interview = String.valueOf (scan.nextBoolean ());
-
+        System.out.println ("\n");
         System.out.println ("Have they been hired? 1 for true, 0 for false:");
         String hired = String.valueOf (scan.nextBoolean ());
-
-        System.out.println ("Enter hire date:");
+        System.out.println ("\n");
+        System.out.println ("Enter hire date in YYYY-MM-DD format:");
         String hiredate = scan.next ();
 
         String sql = "INSERT INTO applicant_tracking SET employee_id=?, job_id=?, job_title=?, interviewed=?, hired=?, hire_date=?;";
