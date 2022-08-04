@@ -15,6 +15,7 @@ public class ESSMenu {
         System.out.println("[PAY] PAYROLL");
         System.out.println("[BEN] BENEFITS");
         System.out.println("[TAX] TAX INFORMATION");
+        System.out.println("[TAX DELETE] DELETE TAX INFORMATION");
         System.out.println("[TIME] TIME INFO");
         System.out.println("[ATTN] ATTENDANCE");
         System.out.println("[DEP] DEPARTMENT");
@@ -39,8 +40,8 @@ public class ESSMenu {
         if (input.equalsIgnoreCase("time")) {
             Time.getTimeData();
         }
-        if (input.equalsIgnoreCase("tax")) {
-            Tax.getTaxData();
+        if (input.equalsIgnoreCase("tax delete")) {
+            Tax.removeTaxData();
         }
         if (input.equalsIgnoreCase("dep")) {
             Department.getDepartmentData();
@@ -59,7 +60,7 @@ public class ESSMenu {
                     if (!input.equalsIgnoreCase("attn")) {
                         if (!input.equalsIgnoreCase("ben")) {
                             if (!input.equalsIgnoreCase("time")) {
-                                if (!input.equalsIgnoreCase("tax")) {
+                                if (!input.equalsIgnoreCase("tax delete")) {
                                     if (!input.equalsIgnoreCase("dep")) {
                                         if (!input.equalsIgnoreCase("job")) {
                                             if (!input.equalsIgnoreCase("loc")) {

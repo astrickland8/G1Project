@@ -165,7 +165,7 @@ public class Tax {
 
     }
 
-    public static String removeManagerData() {
+    public static String removeTaxData() {
         Scanner scan = new Scanner (System.in);
         String myUrl = "jdbc:mysql://localhost:3306/mcmillanhrisproject";// update your url here
         String user = "root"; // update your username here
