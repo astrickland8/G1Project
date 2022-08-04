@@ -11,7 +11,7 @@ public class Department {
         String password = "Nitroars8"; // update your password here
 
         System.out.println("Please enter your Department ID:");
-        int att_id = Integer.parseInt(scan.nextLine());
+        int department_id = Integer.parseInt(scan.nextLine());
 
         Connection conn;
         try {
