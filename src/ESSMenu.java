@@ -49,10 +49,10 @@ public class ESSMenu {
         }
         if (input.equalsIgnoreCase("tax")) {
             Tax.getTaxData();
-            System.out.println("Would you like to remove tax information? Y/N");
+            System.out.println("Would you like to update information? Y/N");
             input = scan.next();
             if (input.equalsIgnoreCase("Y")) {
-                Tax.removeTaxData();
+                Tax.setTaxData();
             }
             if (input.equalsIgnoreCase("N")) {
                 essmenu();

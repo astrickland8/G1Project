@@ -7,9 +7,9 @@ public class Employees {
 
     public static String getEmployeeData(){
         Scanner scan = new Scanner(System.in);
-        String myUrl = "jdbc:mysql://127.0.0.1:3306/mcmillanhrisproject";// update your url here
+        String myUrl = "jdbc:mysql://localhost:3306/mcmillanhrisproject";// update your url here
         String user = "root"; // update your username here
-        String password = "G1Project"; // update your password here
+        String password = "Nitroars8"; // update your password here
 
         System.out.println ("Please enter your employee ID:");
         int employee_id = Integer.parseInt (scan.nextLine ());
@@ -54,9 +54,9 @@ public class Employees {
 
     public static String setEmployeeData() {
         Scanner scan = new Scanner (System.in);
-        String myUrl = "jdbc:mysql://127.0.0.1:3306/mcmillanhrisproject";// update your url here
+        String myUrl = "jdbc:mysql://localhost:3306/mcmillanhrisproject";// update your url here
         String user = "root"; // update your username here
-        String password = "G1Project"; // update your password here
+        String password = "Nitroars8"; // update your password here
 
 
         Connection conn;
@@ -135,9 +135,9 @@ public class Employees {
 
     public static String newEmployeeData() {
         Scanner scan = new Scanner (System.in);
-        String myUrl = "jdbc:mysql://127.0.0.1:3306/mcmillanhrisproject";// update your url here
+        String myUrl = "jdbc:mysql://localhost:3306/mcmillanhrisproject";// update your url here
         String user = "root"; // update your username here
-        String password = "G1Project"; // update your password here
+        String password = "Nitroars8"; // update your password here
 
 
         Connection conn;
@@ -220,9 +220,9 @@ public class Employees {
 
     public static String removeEmployeeData() {
         Scanner scan = new Scanner (System.in);
-        String myUrl = "jdbc:mysql://127.0.0.1:3306/mcmillanhrisproject";// update your url here
+        String myUrl = "jdbc:mysql://localhost:3306/mcmillanhrisproject";// update your url here
         String user = "root"; // update your username here
-        String password = "G1Project"; // update your password here
+        String password = "Nitroars8"; // update your password here
 
 
         Connection conn;
