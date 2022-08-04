@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <data-source source="LOCAL" name="MySQL" uuid="2c511b1f-f3af-49a2-a26f-1141d995e621">
       <driver-ref>mysql.8</driver-ref>
@@ -31,12 +32,16 @@
 >>>>>>> 9cb9820595b76a4347ce586817ccc9f6fa1929a0
     <data-source source="LOCAL" name="@localhost" uuid="d40ff40f-f823-44f8-b0c4-f28f7f115493">
 >>>>>>> 7e7d002fdfb70bc963a03db7e24f2895d57deade
+=======
+    <data-source source="LOCAL" name="@localhost" uuid="ef2d711e-7493-4b18-8912-499fad37e37b">
+>>>>>>> Stashed changes
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+<<<<<<< Updated upstream
     <data-source source="LOCAL" name="mcmillanhris@localhost" uuid="c5714b34-5a46-4aaa-9f88-9932ba21eff3">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
@@ -54,5 +59,7 @@
 >>>>>>> fe7cc7ab01e43266d52e65693e9d01c6a5eb82b0
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+=======
+>>>>>>> Stashed changes
   </component>
 </project>
