@@ -1,3 +1,5 @@
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.Scanner;
 public class ESSMenu {
     /* drafting the employee self-service menu AE [7/18/2022]*/
@@ -15,6 +17,10 @@ public class ESSMenu {
         System.out.println("[TAX] TAX INFORMATION");
         System.out.println("[TIME] TIME INFO");
         System.out.println("[ATTN] ATTENDANCE");
+        System.out.println("[DEP] DEPARTMENT");
+        System.out.println("[JOB] JOB");
+        System.out.println("[LOC] LOCATION");
+        System.out.println("[TRAIN] TRAINING");
 
         System.out.println("--------------------------------");
         String input = scan.next();
@@ -35,6 +41,18 @@ public class ESSMenu {
         }
         if (input.equalsIgnoreCase("tax")) {
             Tax.getTaxData();
+        }
+        if (input.equalsIgnoreCase("dep")) {
+            Department.getDepartmentData();
+        }
+        if (input.equalsIgnoreCase("job")) {
+            Job.getJobData();
+        }
+        if (input.equalsIgnoreCase("loc")) {
+            Location.getLocationData();
+        }
+        if (input.equalsIgnoreCase("train")) {
+            Training.getTrainingData();
         } else {
             if (!input.equalsIgnoreCase("pay")) {
                 if (!input.equalsIgnoreCase("inf")) {
@@ -42,11 +60,19 @@ public class ESSMenu {
                         if (!input.equalsIgnoreCase("ben")) {
                             if (!input.equalsIgnoreCase("time")) {
                                 if (!input.equalsIgnoreCase("tax")) {
-                                    input = "invalid";
-                                    System.out.println("Input Invalid. Please enter a valid selection from the menu.");
-                                    while (input == "invalid") {
-                                        essmenu();
-                                        break;
+                                    if (!input.equalsIgnoreCase("dep")) {
+                                        if (!input.equalsIgnoreCase("job")) {
+                                            if (!input.equalsIgnoreCase("loc")) {
+                                                if (!input.equalsIgnoreCase("train")) {
+                                                    input = "invalid";
+                                                    System.out.println("Input Invalid. Please enter a valid selection from the menu.");
+                                                    while (input == "invalid") {
+                                                        essmenu();
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -55,6 +81,6 @@ public class ESSMenu {
                 }
             }
         }
-            return "--------------------------------";
-        }
+                        return "--------------------------------";
     }
+}
