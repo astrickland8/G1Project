@@ -26,6 +26,14 @@ public class ESSMenu {
         String input = scan.next();
         if (input.equalsIgnoreCase("inf")) {
             Employees.getEmployeeData();
+            System.out.println ("Would you like to update you information? Y/N");
+            input = scan.next ();
+            if (input.equalsIgnoreCase ("Y")) {
+                Employees.setEmployeeData ();
+            }
+            if (input.equalsIgnoreCase ("N")) {
+                essmenu ();
+            }
         }
         if (input.equalsIgnoreCase("pay")) {
             //insert pay getter function here
@@ -64,11 +72,14 @@ public class ESSMenu {
                                         if (!input.equalsIgnoreCase("job")) {
                                             if (!input.equalsIgnoreCase("loc")) {
                                                 if (!input.equalsIgnoreCase("train")) {
-                                                    input = "invalid";
-                                                    System.out.println("Input Invalid. Please enter a valid selection from the menu.");
-                                                    while (input == "invalid") {
-                                                        essmenu();
-                                                        break;
+                                                    if (!input.equalsIgnoreCase ("Y")) {
+                                                        if (!input.equalsIgnoreCase ("N")) {
+                                                            input = "invalid";
+                                                            System.out.println("Input Invalid. Please enter a valid selection from the menu.");
+                                                            while (input == "invalid") {
+                                                                essmenu();
+                                                                break;}
+                                                        }
                                                     }
                                                 }
                                             }
