@@ -15,7 +15,6 @@ public class ESSMenu {
         System.out.println("[PAY] PAYROLL");
         System.out.println("[BEN] BENEFITS");
         System.out.println("[TAX] TAX INFORMATION");
-        System.out.println("[TAX DELETE] DELETE TAX INFORMATION");
         System.out.println("[TIME] TIME INFO");
         System.out.println("[ATTN] ATTENDANCE");
         System.out.println("[DEP] DEPARTMENT");
@@ -27,13 +26,13 @@ public class ESSMenu {
         String input = scan.next();
         if (input.equalsIgnoreCase("inf")) {
             Employees.getEmployeeData();
-            System.out.println ("Would you like to update you information? Y/N");
-            input = scan.next ();
-            if (input.equalsIgnoreCase ("Y")) {
-                Employees.setEmployeeData ();
+            System.out.println("Would you like to update you information? Y/N");
+            input = scan.next();
+            if (input.equalsIgnoreCase("Y")) {
+                Employees.setEmployeeData();
             }
-            if (input.equalsIgnoreCase ("N")) {
-                essmenu ();
+            if (input.equalsIgnoreCase("N")) {
+                essmenu();
             }
         }
         if (input.equalsIgnoreCase("pay")) {
@@ -48,8 +47,16 @@ public class ESSMenu {
         if (input.equalsIgnoreCase("time")) {
             Time.getTimeData();
         }
-        if (input.equalsIgnoreCase("tax delete")) {
-            Tax.removeTaxData();
+        if (input.equalsIgnoreCase("inf")) {
+            Tax.getTaxData();
+            System.out.println("Would you like to remove tax information? Y/N");
+            input = scan.next();
+            if (input.equalsIgnoreCase("Y")) {
+                Tax.removeTaxData();
+            }
+            if (input.equalsIgnoreCase("N")) {
+                essmenu();
+            }
         }
         if (input.equalsIgnoreCase("dep")) {
             Department.getDepartmentData();
@@ -68,18 +75,17 @@ public class ESSMenu {
                     if (!input.equalsIgnoreCase("attn")) {
                         if (!input.equalsIgnoreCase("ben")) {
                             if (!input.equalsIgnoreCase("time")) {
-                                if (!input.equalsIgnoreCase("tax delete")) {
-                                    if (!input.equalsIgnoreCase("dep")) {
-                                        if (!input.equalsIgnoreCase("job")) {
-                                            if (!input.equalsIgnoreCase("loc")) {
-                                                if (!input.equalsIgnoreCase("train")) {
-                                                    if (!input.equalsIgnoreCase ("Y")) {
-                                                        if (!input.equalsIgnoreCase ("N")) {
-                                                            input = "invalid";
-                                                            System.out.println("Input Invalid. Please enter a valid selection from the menu.");
-                                                            while (input == "invalid") {
-                                                                essmenu();
-                                                                break;}
+                                if (!input.equalsIgnoreCase("dep")) {
+                                    if (!input.equalsIgnoreCase("job")) {
+                                        if (!input.equalsIgnoreCase("loc")) {
+                                            if (!input.equalsIgnoreCase("train")) {
+                                                if (!input.equalsIgnoreCase("Y")) {
+                                                    if (!input.equalsIgnoreCase("N")) {
+                                                        input = "invalid";
+                                                        System.out.println("Input Invalid. Please enter a valid selection from the menu.");
+                                                        while (input == "invalid") {
+                                                            essmenu();
+                                                            break;
                                                         }
                                                     }
                                                 }
@@ -93,6 +99,9 @@ public class ESSMenu {
                 }
             }
         }
-                        return "--------------------------------";
     }
+}
+                        return "--------------------------------";
+}
+
 }
