@@ -47,7 +47,7 @@ public class ESSMenu {
         if (input.equalsIgnoreCase("time")) {
             Time.getTimeData();
         }
-        if (input.equalsIgnoreCase("inf")) {
+        if (input.equalsIgnoreCase("tax")) {
             Tax.getTaxData();
             System.out.println("Would you like to remove tax information? Y/N");
             input = scan.next();
@@ -75,17 +75,19 @@ public class ESSMenu {
                     if (!input.equalsIgnoreCase("attn")) {
                         if (!input.equalsIgnoreCase("ben")) {
                             if (!input.equalsIgnoreCase("time")) {
-                                if (!input.equalsIgnoreCase("dep")) {
-                                    if (!input.equalsIgnoreCase("job")) {
-                                        if (!input.equalsIgnoreCase("loc")) {
-                                            if (!input.equalsIgnoreCase("train")) {
-                                                if (!input.equalsIgnoreCase("Y")) {
-                                                    if (!input.equalsIgnoreCase("N")) {
-                                                        input = "invalid";
-                                                        System.out.println("Input Invalid. Please enter a valid selection from the menu.");
-                                                        while (input == "invalid") {
-                                                            essmenu();
-                                                            break;
+                                if (!input.equalsIgnoreCase("tax")) {
+                                    if (!input.equalsIgnoreCase("dep")) {
+                                        if (!input.equalsIgnoreCase("job")) {
+                                            if (!input.equalsIgnoreCase("loc")) {
+                                                if (!input.equalsIgnoreCase("train")) {
+                                                    if (!input.equalsIgnoreCase("Y")) {
+                                                        if (!input.equalsIgnoreCase("N")) {
+                                                            input = "invalid";
+                                                            System.out.println("Input Invalid. Please enter a valid selection from the menu.");
+                                                            while (input == "invalid") {
+                                                                essmenu();
+                                                                break;
+                                                            }
                                                         }
                                                     }
                                                 }
